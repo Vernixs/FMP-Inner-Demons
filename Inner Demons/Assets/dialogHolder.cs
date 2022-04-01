@@ -8,6 +8,9 @@ public class dialogHolder : MonoBehaviour
     public string dialogue;
     DialogueManager dMan;
 
+    bool canTalk = false;
+    bool dismissedThisFrame = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,16 +20,41 @@ public class dialogHolder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (canTalk)
+            {
+                if (dMan.dialogActive == false)
+                {
+                    dMan.ShowBox(dialogue);
+                }
+                else
+                {
+                    dMan.dBox.SetActive(false);
+                    dMan.dialogActive = false;
+                }
+            }
+        }
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.name == "Player")
         {
-            if(Input.GetKeyUp(KeyCode.Space))
+            canTalk = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            canTalk = false;
+
+            if(dMan.dialogActive == true)
             {
-                dMan.ShowBox(dialogue);
+                dMan.dBox.SetActive(false);
+                dMan.dialogActive = false;
             }
         }
     }
