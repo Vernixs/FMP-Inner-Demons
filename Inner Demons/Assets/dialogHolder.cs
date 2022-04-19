@@ -34,10 +34,21 @@ public class dialogHolder : MonoBehaviour
                 else
                 {
                     //dMan.dBox.SetActive(false);
-                   // dMan.dialogActive = false;
-                   currentLine                }
+                    // dMan.dialogActive = false;
+                    currentLine++;                }
             }
+            
         }
+
+        if (currentLine >= dialogLines.Length)
+        {
+            dMan.dBox.SetActive(false);
+            dMan.dialogActive = false;
+
+            currentLine = 0;
+        }
+
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
