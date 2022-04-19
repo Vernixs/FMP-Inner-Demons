@@ -11,6 +11,8 @@ public class dialogHolder : MonoBehaviour
 
     bool canTalk = false;
     bool dismissedThisFrame = false;
+    public string[] dialogLines;
+    public int currentLine;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +33,9 @@ public class dialogHolder : MonoBehaviour
                 }
                 else
                 {
-                    dMan.dBox.SetActive(false);
-                    dMan.dialogActive = false;
-                }
+                    //dMan.dBox.SetActive(false);
+                   // dMan.dialogActive = false;
+                   currentLine                }
             }
         }
     }

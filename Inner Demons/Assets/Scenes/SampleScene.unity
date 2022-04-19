@@ -939,6 +939,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Hey There!
+  dialogLines:
+  - 
+  currentLine: 0
 --- !u!61 &1039942936
 BoxCollider2D:
   m_ObjectHideFlags: 0
