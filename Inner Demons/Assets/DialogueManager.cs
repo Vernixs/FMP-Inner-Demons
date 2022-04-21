@@ -20,7 +20,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // dText.text  = dialogLines[currentLine]
+        dText.text = holder.dialogLines[holder.currentLine];
     }
 
     public void ShowBox(string dialogue)
