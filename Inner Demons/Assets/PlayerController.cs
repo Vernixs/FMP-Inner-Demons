@@ -9,16 +9,18 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     bool playerMoving;
     Vector2 lastMove;
+    private Inventory inventory;
 
 
     Rigidbody2D myRigidbody;
 
-
+    
 
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        inventory = new Inventory();
     }
 
 
