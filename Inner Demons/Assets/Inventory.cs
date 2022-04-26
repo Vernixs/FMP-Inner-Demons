@@ -6,8 +6,8 @@ public class Inventory
 {
     private List<Item> itemList;
 
-    [SerializeField] private MaterialTntColour materialTntColour;
-    [SerializeField] private UI_Inventory uiInventry;
+   // [SerializeField] private MaterialTntColour materialTntColour;
+   // [SerializeField] private UI_Inventory uiInventry;
 
     public Inventory()
     {
