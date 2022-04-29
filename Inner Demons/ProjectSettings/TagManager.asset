@@ -56,11 +56,11 @@ TagManager:
   - name: House
     uniqueID: 1465702171
     locked: 0
+  - name: bench
+    uniqueID: 2062165279
+    locked: 0
   - name: Player
     uniqueID: 745484863
-    locked: 0
-  - name: 
-    uniqueID: 2062165279
     locked: 0
   - name: 
     uniqueID: 4069226581
