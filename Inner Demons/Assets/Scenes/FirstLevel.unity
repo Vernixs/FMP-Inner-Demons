@@ -123,6 +123,101 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &50366601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50366602}
+  - component: {fileID: 50366604}
+  - component: {fileID: 50366603}
+  m_Layer: 0
+  m_Name: PoliceOfficer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &50366602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50366601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1943420323}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &50366603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50366601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3bb193718712442a539e892caf52fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &50366604
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50366601}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 745484863
+  m_SortingLayer: 7
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1452298367295948780, guid: 3f7101e378f4db54a958a179918b49a1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &53052879
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 53052881}
   - component: {fileID: 53052880}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 69822314}
   - component: {fileID: 69822313}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grass (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 157111181}
   - component: {fileID: 157111180}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bench (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 172173462}
   - component: {fileID: 172173461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FrontHouse2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,7 +739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232779074}
   - component: {fileID: 232779073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -896,7 +991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458825096}
   - component: {fileID: 458825095}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lamp Post (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -978,7 +1073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 489040093}
   - component: {fileID: 489040092}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1158,7 +1253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 526019312}
   - component: {fileID: 526019311}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grass (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710253070}
   - component: {fileID: 710253069}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackHouse2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1460,7 +1555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720050599}
   - component: {fileID: 720050598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallB (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1542,7 +1637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 751391649}
   - component: {fileID: 751391648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lamp Post (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1773,7 +1868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 922021585}
   - component: {fileID: 922021584}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallB (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1976,7 +2071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1039933243}
   - component: {fileID: 1039933242}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grass (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2136,7 +2231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054099626}
   - component: {fileID: 1054099625}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallB (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2218,7 +2313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098945523}
   - component: {fileID: 1098945522}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2300,7 +2395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142647554}
   - component: {fileID: 1142647553}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2382,7 +2477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158074603}
   - component: {fileID: 1158074602}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2464,7 +2559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1166149691}
   - component: {fileID: 1166149690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallB (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2546,7 +2641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173820898}
   - component: {fileID: 1173820897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FrontHouse1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2628,7 +2723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222124905}
   - component: {fileID: 1222124904}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grass (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2710,7 +2805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249471155}
   - component: {fileID: 1249471154}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2813,7 +2908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAAIexQDNoAdwIAADcFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty2jAU/RVG68LYhkDprnUI6SIJE9LJxhthXWMNsuTRI0Ay/HuvZBu71BvEua9zjq79Rbg0NeRW6bXm7EkxID9GxJ/Jt1EffIQT3Su55Z/Q5bxzZkufREPOK7VcIR77MqMqsJrnP+Ve+OQIQSd5oXS1YntIlbEG4YIKAxjSyvpqidDXiJzwZ7z0JWc8JQt/+sTTMhpd8JiDtKAHqckk8k/SFozjZDJb4jNP2kLMSKZ38WK6Gkfz0MPJXNCqBuYF9a3m3dBp3PSMlyFdouQ208vLlRDctHyJPdfBj5TWxqFaTGCcov5AMp5MESiB70vr1QzLX4rCgG3t0fR8zzUa2fQlv1TjbkXNoWH4QYULZgZOTcun/6LjOIQLrarHbmoc+Qm25PnhlZ5zauzA/CF8PyAebDpScaA7Ae8lyGe11spJhkGrnS91BpL7/u9VWFpCfujxhuoN6Ore98727qZR4SVIP6WCVzuPTGYNsBUq2B32AzRezG/kG7bHtB0Q9ST+GHij++GatYEHro3FUCtSenY75bRPJatgmRfjbKq0hAC3nGuQVNjzBtvY2/u7iQ3G3kQeqH+h2uFtrHtPbkoC3OdH0U1oo47XuzKlOj6BKV+cFVxCT9oHntGnVEnZrNfQk65s63RB80HZ3nH272aR2eJukec0KeiCxixajmkEbDGD77O4mEVzVpCwelyiTio2DdHWHrw12TeXuGbdd2a01rQOq840Pa75Z6UGlnNZqG2uAeRL0+FKHDQOwZeSrRhHg7ZgLZfhvslXRoTKD8Cya6MsKF2drKZZ3yUjNf9Q1iMZScOHJSMevq7yRsMHh6Mf3jW7kMtfUEsDBBQAAAgIAAAAIexRVGYpbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSibmpeXJyolFaonmiYYqBpW6iQWqKuUmqhYlhmomBWUqaUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAAIexQDNoAdwIAADcFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAAIexRVGYpbQAAAHgAAAAJACQAAAAAAAAAAAAAAMQCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAfAMAAAAA
+    dataString: UEsDBBQAAAgIAAAAIew2/W2deQIAADwFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAU/CuMzoWxDYHSW+sQ0kMSJqSTiy9CesYaZMkjyQGS4b/3SbaxS31B7PvaXT37iwhlK2BOm7UR/ElzID9GxJ/Jt1EffIQT3Wu1FZ/Q5bwL7gqfREPOK3VCIx77MqtLcEawn2ovfXKEYK1Erk254ntItXUW4ZxKCxgy2vlqhdDXiJzwZ7z0JWc8JQt/+sTTMhpd8MhAOTCD1GQS+SdpC8ZxMpkt8ZknbSFmJNO7eDFdjaN56FErJmlZAfeC+lbzbug0bnrGy5CuUHKb6eUxLaWwLV/izlXwI6WVrVEtJnBBUX8gGU+mCBQg9oXzaoblL3luwbX2GHq+FwaNbPqSX7pxt6T20DD8oLIOFJZJ40TT9em/hHEcwrnR5WM3OI78EFcIdnilZ0atG/g/hO8H3INTRyoPdCfhvQD1rNdG14pj0Jnal9YWkvv+71VbWgA79HhD9Qasq976zvnusr2GS5B/SqUodz40mTXAVupgedgRMHg5v5Fw2CDbtkDUs/hj4Y3uh6vWBh6EsQ5DrUrl6e10bXwqWQXPvJrapdooCHBLugJFpTtvsI27vcOb2GDsTeSB+peqHd7GunflpiTAfX4U3YQ2+ni9LFvo4xPY4qV2UijoSfvAM/qUaqWaFRt60pVta5NTNijb14L/u1pktrhbMEaTnC5ozKPlmEbAFzP4PovzWTTnOQm7JxTqpHLTEG3twVtTfXOFe9Z9a0ZrQ6uw7tzQ41p8lnpIUKhcb5kBUC9NiytzMDgF30y+4gId2oJzQoULJ18ZkZodgGfXmVmQujo5Q7O+S0Yq8aGdRzKShq9LRjx8XeaNgQ8BRz+8a3Yhl79QSwMEFAAACAgAAAAh7FFUZiltAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJKJual5cnKiUVqieaJhioGlbqJBaoq5SaqFiWGaiYFZSppSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAAh7Db9bZ15AgAAPAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAAh7FFUZiltAAAAeAAAAAkAJAAAAAAAAAAAAAAAxgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB+AwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -3023,7 +3118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1393474105}
   - component: {fileID: 1393474104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InviWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3137,7 +3232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1448711947}
   - component: {fileID: 1448711946}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallB (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3325,7 +3420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1478159073}
   - component: {fileID: 1478159072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MChouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3407,7 +3502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1482956086}
   - component: {fileID: 1482956085}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3489,7 +3584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512738718}
   - component: {fileID: 1512738717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackHouse3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3671,7 +3766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575967712}
   - component: {fileID: 1575967711}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3753,7 +3848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1656218936}
   - component: {fileID: 1656218935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BackHouse1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3835,7 +3930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1667153416}
   - component: {fileID: 1667153417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InviWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3927,7 +4022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1848761417}
   - component: {fileID: 1848761416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Supermarket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4009,7 +4104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1855254353}
   - component: {fileID: 1855254352}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4091,7 +4186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1894663506}
   - component: {fileID: 1894663505}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bench (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4173,7 +4268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1910359798}
   - component: {fileID: 1910359797}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4245,6 +4340,141 @@ Transform:
   m_Father: {fileID: 914002025}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1943420319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1943420323}
+  - component: {fileID: 1943420322}
+  - component: {fileID: 1943420321}
+  - component: {fileID: 1943420320}
+  - component: {fileID: 1943420324}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1943420320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943420319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 2057599891}
+--- !u!114 &1943420321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943420319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 0.7
+  height: 2
+  canMove: 1
+  maxSpeed: 2
+  gravity: {x: 0, y: 0, z: 0}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 1
+  enableRotation: 0
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 10
+    maximumInterval: 2
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 2.4
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
+--- !u!114 &1943420322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943420319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!4 &1943420323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943420319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.11, y: -11.31, z: -2.94}
+  m_LocalScale: {x: 4.2585, y: 4.2585, z: 4.2585}
+  m_Children:
+  - {fileID: 50366602}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1943420324
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943420319}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.012592207}
+  serializedVersion: 2
+  m_Radius: 0.14002904
 --- !u!1 &2012832192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,7 +4566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2048875490}
   - component: {fileID: 2048875489}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grass (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4597,7 +4827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057599887}
   m_LocalRotation: {x: -0.011474255, y: -0, z: -0, w: 0.9999342}
-  m_LocalPosition: {x: -10.199999, y: -8.757271, z: -2.8680694}
+  m_LocalPosition: {x: -10.199999, y: -8.58, z: -2.8680694}
   m_LocalScale: {x: 3.4611044, y: 3.4611044, z: 3.4611044}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4660,7 +4890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075328185}
   - component: {fileID: 2075328184}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lamp Post
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4799,7 +5029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125248482}
   - component: {fileID: 2125248481}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassWallL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
