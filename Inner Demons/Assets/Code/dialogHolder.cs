@@ -72,4 +72,9 @@ public class dialogHolder : MonoBehaviour
             }
         }
     }
+
+    public void QuestScreen()
+    {
+
+    }
 }

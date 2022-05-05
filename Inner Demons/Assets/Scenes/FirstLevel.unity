@@ -1841,7 +1841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855551989}
   m_LocalRotation: {x: -0.011474255, y: -0, z: -0, w: 0.9999342}
-  m_LocalPosition: {x: -1.539999, y: -8.79726, z: -2.8671572}
+  m_LocalPosition: {x: -1.39, y: -5.92, z: -2.93}
   m_LocalScale: {x: 3.8142126, y: 3.8142126, z: 3.8142126}
   m_Children:
   - {fileID: 1039942934}
@@ -2326,11 +2326,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: Hey There!
   dialogLines:
-  - hello
-  - how are you
-  - what have you been up to
-  - just been walking around
-  - oh
+  - Hello, could you do me a favor and pick up that item, just to the right.
+  - 
   currentLine: 0
 --- !u!61 &1039942936
 BoxCollider2D:
