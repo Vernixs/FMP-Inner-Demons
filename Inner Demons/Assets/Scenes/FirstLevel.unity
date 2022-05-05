@@ -3321,8 +3321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -424, y: 85}
-  m_SizeDelta: {x: 166.7592, y: 35.0694}
+  m_AnchoredPosition: {x: -22.682098, y: 43.978214}
+  m_SizeDelta: {x: 969.3952, y: 117.1131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390417618
 MonoBehaviour:
@@ -4273,7 +4273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1708245732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4709,6 +4709,7 @@ GameObject:
   - component: {fileID: 1943420320}
   - component: {fileID: 1943420324}
   - component: {fileID: 1943420325}
+  - component: {fileID: 1943420326}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -4828,9 +4829,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.012592207}
+  m_Offset: {x: 0.010121466, y: 0.012592207}
   serializedVersion: 2
-  m_Radius: 0.14002904
+  m_Radius: 0.25435302
 --- !u!114 &1943420325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4843,6 +4844,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c13ee350e6e8904296847dd8d1b7bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1943420326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943420319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44704642bd7d4d644b37962099ed0729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: 
+  dialogLines:
+  - Officer:Hello, Sir.
+  - Player:Hello, Officer.
+  - Officer:What are you up to?
+  - 'Player: Just going to do some grocery shopping nothing much.'
+  - 'Officer: Well, take care of yourself.'
+  - 'Player: You too, Officer. Have a good day.'
+  - 'Officer: You too.'
+  currentLine: 0
 --- !u!1 &2012832192
 GameObject:
   m_ObjectHideFlags: 0
