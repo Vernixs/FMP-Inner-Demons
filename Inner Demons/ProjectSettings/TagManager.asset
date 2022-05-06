@@ -50,11 +50,11 @@ TagManager:
   - name: Walls
     uniqueID: 3118327339
     locked: 0
-  - name: Lamposts
-    uniqueID: 3175467569
-    locked: 0
   - name: House
     uniqueID: 1465702171
+    locked: 0
+  - name: Lamposts
+    uniqueID: 3175467569
     locked: 0
   - name: bench
     uniqueID: 2062165279
@@ -62,6 +62,6 @@ TagManager:
   - name: Player
     uniqueID: 745484863
     locked: 0
-  - name: 
+  - name: backhouse
     uniqueID: 4069226581
     locked: 0
