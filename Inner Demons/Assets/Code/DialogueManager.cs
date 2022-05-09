@@ -9,18 +9,21 @@ public class DialogueManager : MonoBehaviour
     public GameObject dBox;
     public Text dText;
     dialogHolder holder;
+   
 
     public bool dialogActive;
 
     void Start()
     {
         holder = FindObjectOfType<dialogHolder>();
+      
     }
 
     // Update is called once per frame
     void Update()
     {
         dText.text = holder.dialogLines[holder.currentLine];
+       
     }
 
     public void ShowBox(string dialogue)
