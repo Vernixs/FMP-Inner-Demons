@@ -27,7 +27,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             //Debug.Log("player");
             visualCue.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 //Debug.Log("dialogue");
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
