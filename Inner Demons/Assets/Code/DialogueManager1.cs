@@ -1,9 +1,9 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager1 : MonoBehaviour
 {
 
     public GameObject dBox;
@@ -34,3 +34,4 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Nope?");
     }
 }
+*/

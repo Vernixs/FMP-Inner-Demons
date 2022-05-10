@@ -20,12 +20,12 @@ public class DialogueTrigger : MonoBehaviour
         visualCue.SetActive(true);
     }
 
-    public void Awake()
+    public void Update()
     {
-        if (npcInRange)
+        if (playerInRange)
         {
             visualCue.SetActive(true);
-
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                 dialoguePanel = true;
@@ -34,19 +34,15 @@ public class DialogueTrigger : MonoBehaviour
 
         else
         {
-            visualCue.SetActive(true);
+            visualCue.SetActive(false);
         }
 
-        // if (Input.GetKeyDown(KeyCode.B))
-        // {
-        //      dialoguePanel = true;
-        //   }
 
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "NPC")
+        if (collider.gameObject.tag == "Player")
         {
             playerInRange = true;
         }
@@ -54,7 +50,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "NPC")
+        if (collider.gameObject.tag == "Player")
         {
             playerInRange = false;
         }
