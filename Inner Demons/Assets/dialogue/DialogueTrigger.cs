@@ -16,22 +16,24 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Awake()
     {
-        playerInRange = true;
-        visualCue.SetActive(true);
+        playerInRange = false;
+        visualCue.SetActive(false);
     }
 
     public void Update()
-    {
-        if (playerInRange)
+    {   
+        
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
+            //Debug.Log("player");
             visualCue.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                //Debug.Log("dialogue");
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                 dialoguePanel = true;
             }
         }
-
         else
         {
             visualCue.SetActive(false);

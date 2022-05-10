@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
 
-    public bool dialogueIsPlaying;
+    public bool dialogueIsPlaying { get; private set;  }
 
 
     private static DialogueManager instance;
@@ -76,6 +76,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+        //Debug.Log("dialogue");
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);

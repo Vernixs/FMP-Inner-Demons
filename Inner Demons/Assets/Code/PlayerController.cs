@@ -26,6 +26,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
 
         playerMoving = false;
 
