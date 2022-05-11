@@ -32,6 +32,7 @@ public class DialogueTrigger : MonoBehaviour
                 //Debug.Log("dialogue");
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                 dialoguePanel = true;
+                
             }
         }
         else

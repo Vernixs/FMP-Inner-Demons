@@ -78,7 +78,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
-        
+        questB.SetActive(false);
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -91,6 +91,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+        questB.SetActive(true);
     }
 
     private void ContinueStory()
@@ -149,6 +150,6 @@ public class DialogueManager : MonoBehaviour
 
     public void Questing()
     {
-        questB.SetActive(true);
+        //questB.SetActive(true);
     }
 }
