@@ -9,18 +9,18 @@ public class PlayerController : MonoBehaviour
     Animator anim;
     bool playerMoving;
     Vector2 lastMove;
-    private Inventory inventory;
+ 
 
 
     Rigidbody2D myRigidbody;
 
-    
+    public int money = 0;
 
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        inventory = new Inventory();
+  
     }
 
 
@@ -64,4 +64,10 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("LastMoveX", lastMove.x);
         anim.SetFloat("LastMoveY", lastMove.y);
     }
+
+    public void Quest()
+    {
+        money += 1;
+    }
+        
 }
