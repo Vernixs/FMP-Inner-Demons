@@ -8801,6 +8801,10 @@ MonoBehaviour:
     description: Go fetch some milk. Which can be found on the road.
     money: 5
   player: {fileID: 2057599888}
+  questWindow: {fileID: 2111260594}
+  titleText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  moneyText: {fileID: 0}
 --- !u!4 &1750369520
 Transform:
   m_ObjectHideFlags: 0
