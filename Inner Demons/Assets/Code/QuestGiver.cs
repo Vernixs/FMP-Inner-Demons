@@ -21,4 +21,11 @@ public class QuestGiver : MonoBehaviour
         descriptionText.text = quest.description;
         moneyText.text = quest.money.ToString();
     }
+
+    public void AcceptQuest()
+    {
+        questWindow.SetActive(false);
+        quest.isActive = true;
+        player.quest = quest;
+    }
 }
