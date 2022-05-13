@@ -7,8 +7,7 @@ public class Quest
 {
     public bool isActive;
 
-    public string title;
-    public string description;
+    public GameObject questBox;
     public int money;
 
     

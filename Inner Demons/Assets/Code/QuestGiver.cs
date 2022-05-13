@@ -10,16 +10,15 @@ public class QuestGiver : MonoBehaviour
     public PlayerController player;
 
     public GameObject questWindow;
-    public Text titleText;
-    public Text descriptionText;
-    public Text moneyText;
+    public GameObject requirements;
+    
 
     public void OpenQuestWindow()
     {
         questWindow.SetActive(true);
-        titleText.text = quest.title;
-        descriptionText.text = quest.description;
-        moneyText.text = quest.money.ToString();
+        //moneyText = quest.money.ToString();
+        
+        
     }
 
     public void AcceptQuest()
