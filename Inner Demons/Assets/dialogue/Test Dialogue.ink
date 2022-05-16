@@ -1,20 +1,20 @@
-This dialogue works well!
+Hello, I have quick request.
 
-if not, I'm going to get mad.
+If you don't mind could you go get some milk. We ran out of it.
 
 ->My_Choices
 == My_Choices ==
-+ [Good] -> Good
-+ [Bad] -> Bad
++ [Accept] -> Accept
++ [Reject] -> Reject
 
 
 
-== Good ==
+== Accept ==
 
-I'm Doing fine, thanks.
+
 -> END
 
-== Bad ==
+== Reject ==
 Thats Unfortunate to hear... Hopefully you feel better later
 
 How about now?
