@@ -9,6 +9,7 @@ public class DialogueTrigger : MonoBehaviour
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSON2;
 
     bool dialoguePanel = false;
 
@@ -48,6 +49,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             playerInRange = true;
+
         }
     }
 

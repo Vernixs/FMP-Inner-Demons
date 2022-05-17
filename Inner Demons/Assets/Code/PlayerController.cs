@@ -71,5 +71,7 @@ public class PlayerController : MonoBehaviour
     {
         money += 1;
     }
-        
+
+
+
 }

@@ -8137,6 +8137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 689109411}
   inkJSON: {fileID: 4900000, guid: 2fd1b057ffb293f42a813d3966b09e42, type: 3}
+  inkJSON2: {fileID: 4900000, guid: f976ae5d529eaeb4a8e432a850a2493a, type: 3}
 --- !u!61 &1635031583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8689,6 +8690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993dfd8879940724fbe4ae00c6352ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualCue: {fileID: 0}
+  inkJSON: {fileID: 4900000, guid: f976ae5d529eaeb4a8e432a850a2493a, type: 3}
+  inkJSON2: {fileID: 4900000, guid: f976ae5d529eaeb4a8e432a850a2493a, type: 3}
 --- !u!61 &1707393513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8699,7 +8703,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.09824471, y: 0.301297}
