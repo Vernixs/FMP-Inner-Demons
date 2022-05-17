@@ -349,6 +349,7 @@ GameObject:
   - component: {fileID: 50366602}
   - component: {fileID: 50366604}
   - component: {fileID: 50366603}
+  - component: {fileID: 50366605}
   m_Layer: 0
   m_Name: PoliceOfficer
   m_TagString: Untagged
@@ -433,6 +434,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &50366605
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50366601}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &90194880
 GameObject:
   m_ObjectHideFlags: 0
@@ -8690,9 +8712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 993dfd8879940724fbe4ae00c6352ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 0}
   inkJSON: {fileID: 4900000, guid: f976ae5d529eaeb4a8e432a850a2493a, type: 3}
-  inkJSON2: {fileID: 4900000, guid: f976ae5d529eaeb4a8e432a850a2493a, type: 3}
 --- !u!61 &1707393513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8706,7 +8726,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09824471, y: 0.301297}
+  m_Offset: {x: -0.09115009, y: 0.26274654}
   m_SpriteTilingProperty:
     border: {x: 0.38, y: 0.71, z: 0.52, w: 0.19}
     pivot: {x: 0.5, y: 0.5}
@@ -8717,7 +8737,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3158647, y: 0.23111308}
+  m_Size: {x: 0.40038958, y: 0.36435086}
   m_EdgeRadius: 0
 --- !u!1 &1724702856
 GameObject:
@@ -10418,10 +10438,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943420319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c13ee350e6e8904296847dd8d1b7bb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 00ab4787a1bb3d149b1430daf213b269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  inkJSON: {fileID: 4900000, guid: 56420cecf6b212245b80cee1783c2881, type: 3}
 --- !u!1 &1945157490
 GameObject:
   m_ObjectHideFlags: 0

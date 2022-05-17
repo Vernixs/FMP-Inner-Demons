@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
-public class ObjectDestroy : MonoBehaviour
+public class PoliceOfficer : MonoBehaviour
 {
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
-
+    AIPath path;
     bool dialoguePanel = false;
 
     private bool playerInRange;
@@ -15,6 +16,7 @@ public class ObjectDestroy : MonoBehaviour
     private void Awake()
     {
         playerInRange = false;
+        path = FindObjectOfType<AIPath>();
     }
 
     public void Update()
@@ -22,19 +24,8 @@ public class ObjectDestroy : MonoBehaviour
 
         if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) || (DialogueManager.GetInstance().dialogueIsPlaying))
         {
-
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-                dialoguePanel = true;
-
-                GetComponent<SpriteRenderer>().enabled = false;
-                GetComponent<BoxCollider2D>().enabled = false;
-
-
-
-            }
+         DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+         dialoguePanel = true;
         }
 
 
@@ -48,7 +39,7 @@ public class ObjectDestroy : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             playerInRange = true;
-
+            path.canMove = false;
         }
     }
 
@@ -56,6 +47,7 @@ public class ObjectDestroy : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            path.canMove = true;
             playerInRange = false;
         }
     }

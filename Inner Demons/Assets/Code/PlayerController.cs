@@ -30,6 +30,10 @@ public class PlayerController : MonoBehaviour
     {
         if(DialogueManager.GetInstance().dialogueIsPlaying)
         {
+            myRigidbody.velocity = Vector2.zero;
+            anim.SetFloat("MoveX",0f);
+            anim.SetFloat("MoveY",0f);
+            anim.SetBool("PlayerMoving", false);
             return;
         }
 

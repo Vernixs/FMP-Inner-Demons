@@ -4,7 +4,7 @@ using UnityEngine;
 using Pathfinding;
 
 
-public class CanMove : MonoBehaviour
+/*public class CanMove : MonoBehaviour
 {
 
     AIPath path;
@@ -22,7 +22,21 @@ public class CanMove : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         path.canMove = false;
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            GetComponent<Rigidbody2D>().isKinematic = false;
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        path.canMove = true;
+        if(collision.gameObject.tag == "Player")
+        {
+            GetComponent<Rigidbody2D>().isKinematic = true;
+        }
     }
 
 }
+*/
