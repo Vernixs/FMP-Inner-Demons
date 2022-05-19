@@ -1550,53 +1550,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319808644}
   m_CullTransparentMesh: 1
---- !u!1 &334299891
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 334299892}
-  - component: {fileID: 334299893}
-  m_Layer: 0
-  m_Name: canMove
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &334299892
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334299891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2057599891}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &334299893
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334299891}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0053237416}
-  serializedVersion: 2
-  m_Radius: 0.22709385
 --- !u!1 &359625748
 GameObject:
   m_ObjectHideFlags: 0
@@ -8229,8 +8182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 689109411}
-  inkJSON: {fileID: 4900000, guid: 2fd1b057ffb293f42a813d3966b09e42, type: 3}
-  inkJSON2: {fileID: 4900000, guid: f976ae5d529eaeb4a8e432a850a2493a, type: 3}
+  inkJSON2: {fileID: 4900000, guid: 2fd1b057ffb293f42a813d3966b09e42, type: 3}
 --- !u!61 &1635031583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11015,10 +10967,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   money: 0
-  quest:
-    isActive: 0
-    questBox: {fileID: 0}
-    money: 0
 --- !u!95 &2057599889
 Animator:
   serializedVersion: 3
@@ -11097,10 +11045,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057599887}
   m_LocalRotation: {x: -0.011474255, y: -0, z: -0, w: 0.9999342}
-  m_LocalPosition: {x: -46.69, y: -8.53, z: -25.63}
+  m_LocalPosition: {x: -33.97, y: -4.79, z: -25.72}
   m_LocalScale: {x: 4.473414, y: 4.473414, z: 4.473414}
-  m_Children:
-  - {fileID: 334299892}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -1.315, y: 0, z: 0}

@@ -8,7 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private GameObject visualCue;
 
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSON2;
 
 
     bool dialoguePanel = false;
@@ -31,7 +31,7 @@ public class DialogueTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 //Debug.Log("dialogue");
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON2);
                 dialoguePanel = true;
                 
             }

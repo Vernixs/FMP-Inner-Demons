@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     public int money = 0;
 
-    public Quest quest;
+    
 
     void Start()
     {
