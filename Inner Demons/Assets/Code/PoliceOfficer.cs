@@ -22,7 +22,7 @@ public class PoliceOfficer : MonoBehaviour
     public void Update()
     {
 
-        if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) || (DialogueManager.GetInstance().dialogueIsPlaying))
+        if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying))
         {
          DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
          dialoguePanel = true;

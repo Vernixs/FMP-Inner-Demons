@@ -9,6 +9,7 @@ public class ObjectDestroy : MonoBehaviour
 
 
     bool dialoguePanel = false;
+    bool continueDialog;
 
     private bool playerInRange;
 
@@ -20,9 +21,9 @@ public class ObjectDestroy : MonoBehaviour
     public void Update()
     {
 
-        if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) || (DialogueManager.GetInstance().dialogueIsPlaying))
+        if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) || continueDialog)
         {
-
+            continueDialog = true;
             if (Input.GetKeyDown(KeyCode.F))
             {
 
