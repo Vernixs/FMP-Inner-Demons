@@ -9,7 +9,6 @@ public class ObjectDestroy : MonoBehaviour
 
 
     bool dialoguePanel = false;
-    bool conversationStart = false;
 
     private bool playerInRange;
 
@@ -21,12 +20,12 @@ public class ObjectDestroy : MonoBehaviour
     public void Update()
     {
 
-        if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) || conversationStart)
+        if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) || (DialogueManager.GetInstance().dialogueIsPlaying))
         {
 
             if (Input.GetKeyDown(KeyCode.F))
             {
-                conversationStart = true;
+
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
                 dialoguePanel = true;
 
