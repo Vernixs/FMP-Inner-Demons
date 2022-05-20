@@ -78,6 +78,8 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+        Debug.Log(inkJSON.text);
+
         questB.SetActive(false);
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
