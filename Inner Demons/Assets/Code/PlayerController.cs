@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log("sgsg");
+
         if(DialogueManager.GetInstance().dialogueIsPlaying)
         {
             myRigidbody.velocity = Vector2.zero;

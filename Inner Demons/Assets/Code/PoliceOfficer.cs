@@ -8,38 +8,53 @@ public class PoliceOfficer : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+    
     AIPath path;
+    AIDestinationSetter nonplayer;
     bool dialoguePanel = false;
+    [SerializeField]GameObject diffTarget;
 
     private bool playerInRange;
+
+    bool spoken = false;
 
     private void Awake()
     {
         playerInRange = false;
         path = FindObjectOfType<AIPath>();
+        nonplayer = FindObjectOfType<AIDestinationSetter>();
     }
 
     public void Update()
     {
-
-        if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying))
+        if (spoken == false)
         {
-         DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-         dialoguePanel = true;
+            if ((playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying))
+            {
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                dialoguePanel = true;
+                spoken = true;
+            }
         }
-
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        //Debug.Log("hello");
+        Debug.Log("hello");
 
         if (collider.gameObject.tag == "Player")
         {
             playerInRange = true;
-            path.canMove = false;
+            
+        }
+
+        if (collider.gameObject.tag == "Go Away")
+        {
+            nonplayer.target = FindObjectOfType<PlayerController>().transform;
+
+            Debug.Log(nonplayer.target);
+
+            spoken = false;
         }
     }
 
@@ -47,8 +62,10 @@ public class PoliceOfficer : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            path.canMove = true;
+            //path.canMove = true;
             playerInRange = false;
+            nonplayer.target = diffTarget.transform;
+
         }
     }
 }

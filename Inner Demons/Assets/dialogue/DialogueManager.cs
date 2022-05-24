@@ -36,7 +36,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Found More Than One Dialogue Manager in the scene");
+            //Debug.LogWarning("Found More Than One Dialogue Manager in the scene");
+            Destroy(gameObject);
         }
         instance = this;
     }
