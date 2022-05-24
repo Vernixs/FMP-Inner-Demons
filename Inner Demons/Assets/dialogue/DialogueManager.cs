@@ -30,7 +30,6 @@ public class DialogueManager : MonoBehaviour
 
     private static DialogueManager instance;
 
-    public GameObject questB;
 
     private void Awake()
     {
@@ -79,7 +78,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
-        questB.SetActive(false);
+        
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -148,8 +147,4 @@ public class DialogueManager : MonoBehaviour
         currentStory.ChooseChoiceIndex(choiceIndex);
     }
 
-    public void Questing()
-    {
-        questB.SetActive(true);
-    }
 }

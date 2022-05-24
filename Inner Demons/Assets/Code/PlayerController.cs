@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D myRigidbody;
 
-    public int money = 0;
+  
 
     
 
@@ -73,10 +73,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("LastMoveY", lastMove.y);
     }
 
-    public void Quest()
-    {
-        money += 1;
-    }
+ 
 
 
 
