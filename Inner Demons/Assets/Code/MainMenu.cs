@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public string firstLevel;
 
     public GameObject optionsScreen;
+    public GameObject mainScreen;
     public void Start()
     {
         
@@ -22,21 +23,25 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame ()
     {
-        SceneManager.LoadScene(firstLevel);
+        SceneManager.LoadScene(1);
     }
 
     public void OpenOptions()
     {
         optionsScreen.SetActive(true);
+        mainScreen.SetActive(false);
+
     }
 
     public void CloseOptions()
     {
         optionsScreen.SetActive(false);
+        mainScreen.SetActive(true);
     }
 
     public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("works");
     }
 }

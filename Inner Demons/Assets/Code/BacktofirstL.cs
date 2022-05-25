@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScenes : MonoBehaviour
+public class BacktofirstL : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        
-            SceneManager.LoadScene(2);
-        
+
+
+        SceneManager.LoadScene(2);
+
     }
 }
