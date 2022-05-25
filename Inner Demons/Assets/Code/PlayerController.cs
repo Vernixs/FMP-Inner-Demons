@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D myRigidbody;
 
-  
+    public static Vector3 lastCall;
 
     
 
@@ -22,13 +22,14 @@ public class PlayerController : MonoBehaviour
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        
   
     }
 
 
     void Update()
     {
-        //Debug.Log("sgsg");
+        Debug.Log(lastCall);
 
         if(DialogueManager.GetInstance().dialogueIsPlaying)
         {

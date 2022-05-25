@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Level1 : MonoBehaviour
 {
+
+    public GameObject player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
 
-        SceneManager.LoadScene(2);
 
     }
 }
