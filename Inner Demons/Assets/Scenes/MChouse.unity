@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 780179963}
   m_Layer: 0
   m_Name: Level1
-  m_TagString: Untagged
+  m_TagString: MCLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2136,7 +2136,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 780179960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0ea0eff0d3f7a43b0d0be421d12911, type: 3}
+  m_Script: {fileID: 11500000, guid: cd7ccc2a43146254b9ac5cc39ab3dabf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &788077763

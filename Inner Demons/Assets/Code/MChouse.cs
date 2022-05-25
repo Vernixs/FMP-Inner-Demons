@@ -10,10 +10,10 @@ public class MChouse : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            PlayerController.lastCall = FindObjectOfType<PlayerController>().transform.position;
-            SceneManager.LoadScene(1);
-        }
+            if (collision.tag == "Player")
+            {
+                PlayerController.lastCall = FindObjectOfType<PlayerController>().transform.position;
+                SceneManager.LoadScene(1);
+            }
     }
 }
