@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MChouse : MonoBehaviour
 {
-
-    private Vector3 respawnPoint; 
     
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -3005,7 +3005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091707622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1, y: 4.5, z: 0}
+  m_LocalPosition: {x: 6.63, y: 4.57, z: 0}
   m_LocalScale: {x: 22.694, y: 22.694, z: 22.694}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3418,7 +3418,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9069532016818844061, guid: 532eee4fc5673474db2d078d1e3d941e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9069532017034704698, guid: 532eee4fc5673474db2d078d1e3d941e, type: 3}
       propertyPath: m_fontSize
@@ -3586,12 +3586,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069532018115677220, guid: 532eee4fc5673474db2d078d1e3d941e, type: 3}
       propertyPath: choices.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9069532018115677220, guid: 532eee4fc5673474db2d078d1e3d941e, type: 3}
       propertyPath: choices.Array.data[0]
       value: 
       objectReference: {fileID: 1003584727}
+    - target: {fileID: 9069532018115677220, guid: 532eee4fc5673474db2d078d1e3d941e, type: 3}
+      propertyPath: choices.Array.data[1]
+      value: 
+      objectReference: {fileID: 1714802171}
     - target: {fileID: 9069532018121829247, guid: 532eee4fc5673474db2d078d1e3d941e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4214,6 +4218,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1714802171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9069532017158240793, guid: 532eee4fc5673474db2d078d1e3d941e, type: 3}
+  m_PrefabInstance: {fileID: 1201585194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1767079626
 GameObject:
   m_ObjectHideFlags: 0
